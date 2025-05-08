@@ -1,0 +1,2 @@
+Wed May 07 22:35:25 +03 2025 - Executing "{openroad -exit -no_init -python /home/ceyda/OpenLane/scripts/odbpy/lefutil.py get_metal_layers -o /home/ceyda/OpenLane/designs/alu/runs/RUN_2025.05.07_22.35.25/tmp/layers.list /home/ceyda/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+

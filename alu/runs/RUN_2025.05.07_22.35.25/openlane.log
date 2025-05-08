@@ -1,0 +1,10 @@
+[INFO]: Run Directory: /home/ceyda/OpenLane/designs/alu/runs/RUN_2025.05.07_22.35.25
+[WARNING]: DIODE_INSERTION_STRATEGY is now deprecated; use GRT_REPAIR_ANTENNAS, DIODE_ON_PORTS and RUN_HEURISTIC_DIODE_INSERTION instead.
+[INFO]: DIODE_INSERTION_STRATEGY set to 3. Setting GRT_REPAIR_ANTENNAS to 1
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[ERROR]: during executing: "openroad -exit -no_init -python /home/ceyda/OpenLane/scripts/odbpy/lefutil.py get_metal_layers -o /home/ceyda/OpenLane/designs/alu/runs/RUN_2025.05.07_22.35.25/tmp/layers.list /home/ceyda/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+couldn't execute "openroad": no such file or directory
+
