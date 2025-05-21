@@ -1,0 +1,143 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _340_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+     1    0.00    0.01    0.00    2.00 v rst (in)
+                                         rst (net)
+                  0.01    0.00    2.00 v input1/A (sky130_fd_sc_hd__clkbuf_4)
+     5    0.04    0.09    0.19    2.19 v input1/X (sky130_fd_sc_hd__clkbuf_4)
+                                         net1 (net)
+                  0.09    0.00    2.19 v _306_/A (sky130_fd_sc_hd__clkbuf_8)
+    10    0.06    0.08    0.21    2.41 v _306_/X (sky130_fd_sc_hd__clkbuf_8)
+                                         _160_ (net)
+                  0.08    0.01    2.41 v _307_/A (sky130_fd_sc_hd__inv_2)
+     1    0.02    0.08    0.10    2.51 ^ _307_/Y (sky130_fd_sc_hd__inv_2)
+                                         _038_ (net)
+                  0.08    0.00    2.52 ^ _340_/RESET_B (sky130_fd_sc_hd__dfrtp_4)
+                                  2.52   data arrival time
+
+                  0.15   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                                  9.75 ^ _340_/CLK (sky130_fd_sc_hd__dfrtp_4)
+                          0.24    9.99   library recovery time
+                                  9.99   data required time
+-----------------------------------------------------------------------------
+                                  9.99   data required time
+                                 -2.52   data arrival time
+-----------------------------------------------------------------------------
+                                  7.47   slack (MET)
+
+
+Startpoint: _361_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: seg[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.15    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.15    0.00    0.00 ^ _361_/CLK (sky130_fd_sc_hd__dfrtp_4)
+     6    0.03    0.09    0.58    0.58 v _361_/Q (sky130_fd_sc_hd__dfrtp_4)
+                                         decoder.digit[3] (net)
+                  0.09    0.00    0.58 v _165_/A (sky130_fd_sc_hd__nor2_2)
+     2    0.02    0.21    0.23    0.82 ^ _165_/Y (sky130_fd_sc_hd__nor2_2)
+                                         _066_ (net)
+                  0.21    0.00    0.82 ^ _166_/B (sky130_fd_sc_hd__nand2_2)
+     3    0.02    0.11    0.15    0.96 v _166_/Y (sky130_fd_sc_hd__nand2_2)
+                                         _067_ (net)
+                  0.11    0.00    0.97 v _167_/B (sky130_fd_sc_hd__nor2_2)
+     3    0.02    0.22    0.23    1.19 ^ _167_/Y (sky130_fd_sc_hd__nor2_2)
+                                         _068_ (net)
+                  0.22    0.00    1.19 ^ _287_/B1 (sky130_fd_sc_hd__a2111o_1)
+     2    0.01    0.12    0.21    1.41 ^ _287_/X (sky130_fd_sc_hd__a2111o_1)
+                                         net5 (net)
+                  0.12    0.00    1.41 ^ _370_/A (sky130_fd_sc_hd__buf_1)
+     1    0.01    0.12    0.16    1.57 ^ _370_/X (sky130_fd_sc_hd__buf_1)
+                                         net2 (net)
+                  0.12    0.00    1.57 ^ output2/A (sky130_fd_sc_hd__buf_2)
+     1    0.03    0.17    0.24    1.81 ^ output2/X (sky130_fd_sc_hd__buf_2)
+                                         seg[0] (net)
+                  0.17    0.00    1.81 ^ seg[0] (out)
+                                  1.81   data arrival time
+
+                  0.15   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -1.81   data arrival time
+-----------------------------------------------------------------------------
+                                  5.94   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+
+max slew violations count Typical: 0
+max fanout violations count Typical: 0
+max cap violations count Typical: 0
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 9 unannotated drivers.
+ clk
+ ZeroToFiveCounter_10/LO
+ ZeroToFiveCounter_11/LO
+ ZeroToFiveCounter_12/LO
+ ZeroToFiveCounter_13/LO
+ ZeroToFiveCounter_14/LO
+ ZeroToFiveCounter_15/LO
+ ZeroToFiveCounter_16/LO
+ ZeroToFiveCounter_9/HI
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 8 unconstrained endpoints.
+  an[0]
+  an[1]
+  an[2]
+  an[3]
+  an[4]
+  an[5]
+  an[6]
+  an[7]
