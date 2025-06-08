@@ -1,0 +1,19 @@
+Design Name: five
+Run Directory: /openlane/designs/five/runs/RUN_2025.06.08_20.26.44
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/five/runs/RUN_2025.06.08_20.26.44/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/five/runs/RUN_2025.06.08_20.26.44/logs/signoff/37-five.lef.lvs.log
+Number of nets: 88                         |Number of nets: 88                         
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/five/runs/RUN_2025.06.08_20.26.44/logs/signoff/40-arc.log
+Pin violations: 0
+Net violations: 0
