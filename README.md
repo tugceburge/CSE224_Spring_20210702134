@@ -4,6 +4,6 @@
 1
 2
 3
-4
-5
-6) Branch olarak eklenmiştir.
+4) "four" Klasorü olarak main'e eklenmiştir.
+5) "five "Klasor olarak main'e eklenmiştir.
+6) Yeni branch olarak eklenmiştir.
