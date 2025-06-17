@@ -8,7 +8,7 @@
 
 3) "src" ve "runs" klasorunde zero-to-five olarak yer almaktadır.
 
-4) "four" Klasorü olarak main'e eklenmiştir. /n
+4) "four" Klasorü olarak main'e eklenmiştir. Bu dosyanın final_results dosyasında gds dosyası bulunmaktadır.
 
 5) "five "Klasor olarak main'e eklenmiştir.
 
