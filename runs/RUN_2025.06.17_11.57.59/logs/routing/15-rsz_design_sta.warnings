@@ -1,0 +1,15 @@
+[WARNING GRT-0026] Missing route to pin _4874_/RESET_B.
+[WARNING GRT-0026] Missing route to pin _4875_/RESET_B.
+[WARNING GRT-0026] Missing route to pin fanout5/A.
+[WARNING GRT-0026] Missing route to pin max_cap97/A.
+[WARNING GRT-0026] Missing route to pin _2372_/X.
+[WARNING GRT-0026] Missing route to pin _2860_/X.
+[WARNING GRT-0026] Missing route to pin _3175_/B.
+[WARNING GRT-0026] Missing route to pin _3159_/X.
+[WARNING GRT-0026] Missing route to pin wire2/A.
+[WARNING GRT-0026] Missing route to pin _3247_/A.
+[WARNING GRT-0026] Missing route to pin _3247_/B.
+[WARNING GRT-0026] Missing route to pin _3247_/Y.
+[WARNING GRT-0026] Missing route to pin max_cap1/A.
+[WARNING GRT-0026] Missing route to pin _3571_/A.
+[WARNING] Did not save OpenROAD database!

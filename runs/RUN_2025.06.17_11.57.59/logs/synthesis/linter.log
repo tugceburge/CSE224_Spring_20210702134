@@ -1,0 +1,14 @@
+%Warning-WIDTHTRUNC: /openlane/designs/project6/src/Decoder.v:13:13: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's REPLICATE generates 34 bits.
+                                                                   : ... note: In instance 'TopCPU.cpu_inst.decoder'
+   13 |         imm = {{20{instr[13]}}, instr[13:0]}; 
+      |             ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.018
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /openlane/designs/project6/src/CPU.v:50:20: Operator ASSIGNDLY expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 26 bits.
+                                                                : ... note: In instance 'TopCPU.cpu_inst'
+   50 |                 PC <= instr[25:0];
+      |                    ^~
+%Warning-WIDTHEXPAND: /openlane/designs/project6/src/CPU.v:52:20: Operator ASSIGNDLY expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 19 bits.
+                                                                : ... note: In instance 'TopCPU.cpu_inst'
+   52 |                 PC <= instr[18:0];
+      |                    ^~

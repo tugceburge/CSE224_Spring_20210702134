@@ -1,0 +1,14 @@
+digraph "TopCPU" {
+label="TopCPU";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="seg", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="reset", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="control", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+c5 [ shape=record, label="{{<p4> clk|<p3> control|<p2> reset}|cpu_inst\nCPU|{<p1> seg}}",  ];
+c5:p1:e -> n1:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n2:e -> c5:p2:w [color="black", fontcolor="black", label=""];
+n3:e -> c5:p3:w [color="black", fontcolor="black", label=""];
+n4:e -> c5:p4:w [color="black", fontcolor="black", label=""];
+}
