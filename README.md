@@ -1,6 +1,6 @@
 # CSE224_Spring_20210702134
 
-Tuğçe Bürge - 20210702134   /    Ceyda Erdem - 20200705012-072
+Tuğçe Bürge - 20210702134   /    Ceyda Erdem - 20200705012072
 
 6 projede yer almaktadır.
 
