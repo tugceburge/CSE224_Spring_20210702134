@@ -1,5 +1,8 @@
 # CSE224_Spring_20210702134
 
+Tuğçe Bürge - 20210702134
+Ceyda Erdem - 20200705012-072
+
 6 projede yer almaktadır.
 
 1) "src" ve "runs" klasorunde 2's complement olarak yer almaktadır.
