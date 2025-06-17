@@ -2,8 +2,9 @@
 
 6 projede yer almaktadır.
 1
-2
+2) 
 3
-4) "four" Klasorü olarak main'e eklenmiştir.
+4) "four" Klasorü olarak main'e eklenmiştir. /n
+
 5) "five "Klasor olarak main'e eklenmiştir.
 6) Yeni branch olarak eklenmiştir.
